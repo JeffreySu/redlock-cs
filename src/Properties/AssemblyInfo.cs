@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("redlock-cs")]
-[assembly: AssemblyDescription("Redis distributed locks in C# (based on http://redis.io/topics/distlock)")]
+[assembly: AssemblyTitle("Senparc.Weixin.Cache.Redis.RedLock")]
+[assembly: AssemblyDescription("Redis distributed locks in C# (based on https://github.com/KidFashion/redlock-cs and http://redis.io/topics/distlock)")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Angelo Scotto")]
 [assembly: AssemblyProduct("redlock-cs")]
-[assembly: AssemblyCopyright("Copyright ©  2014")]
+[assembly: AssemblyCopyright("Copyright ©  2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -32,5 +32,5 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.0.0.0")]
-[assembly: AssemblyFileVersion("1.0.0.0")]
+[assembly: AssemblyVersion("0.0.1.*")]
+//[assembly: AssemblyFileVersion("1.0.0.0")]

@@ -30,13 +30,21 @@ namespace Redlock.CSharp
     public class Redlock
     {
 
-        public Redlock(params ConnectionMultiplexer[] list)
-        { 
-            foreach(var item in list)
-                this.redisMasterDictionary.Add(item.GetEndPoints().First().ToString(),item);
+        public Redlock(int retryCount, TimeSpan retryDelay,params ConnectionMultiplexer[] list)
+        {
+            DefaultRetryCount = retryCount;
+            DefaultRetryDelay = retryDelay;
+            foreach (var item in list)
+                this.redisMasterDictionary.Add(item.GetEndPoints().First().ToString(), item);
         }
 
-        const int DefaultRetryCount = 3;
+        public Redlock(params ConnectionMultiplexer[] list)
+            :this(3,new TimeSpan(0, 0, 0, 0, 200), list)
+        { 
+
+        }
+
+        readonly int DefaultRetryCount = 3;
         readonly TimeSpan DefaultRetryDelay = new TimeSpan(0, 0, 0, 0, 200);
         const double ClockDriveFactor = 0.01;
 

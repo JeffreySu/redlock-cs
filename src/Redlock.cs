@@ -17,6 +17,17 @@
  * */
 #endregion
 
+/*----------------------------------------------------------------
+    Copyright (C) 2017 Senparc
+
+    文件名：Redlock.cs
+    文件功能描述：Redis 锁
+
+
+    创建标识：Senparc - 20170402
+
+----------------------------------------------------------------*/
+
 using StackExchange.Redis;
 using System;
 using System.Collections.Generic;

@@ -29,7 +29,6 @@ namespace Redlock.CSharp
 {
     public class Redlock
     {
-
         public Redlock(int retryCount, TimeSpan retryDelay,params ConnectionMultiplexer[] list)
         {
             DefaultRetryCount = retryCount;

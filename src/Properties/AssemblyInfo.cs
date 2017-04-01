@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("Senparc.Weixin.Cache.Redis.RedLock")]
 [assembly: AssemblyDescription("Redis distributed locks in C# (based on https://github.com/KidFashion/redlock-cs and http://redis.io/topics/distlock)")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Angelo Scotto")]
+[assembly: AssemblyCompany("Senparc")]
 [assembly: AssemblyProduct("redlock-cs")]
-[assembly: AssemblyCopyright("Copyright ©  2016")]
+[assembly: AssemblyCopyright("Copyright ©  2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
